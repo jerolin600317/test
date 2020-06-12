@@ -167,7 +167,7 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url("../images/footer_bg.jpg");
-  background-size: auto;
+  background-size: auto 100%;
   min-height: 160px;
   padding: 20px;
   color: #5d5d5d;
@@ -220,14 +220,14 @@ a {
   margin: 3vw 0px 0px -2.5vw;
   width: 90%
 }
-.main_content{
-    background-color: rgba(255,255,255,0.60);
-    border: 3px solid rgba(255,255,255,1.00);
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 5px rgba(152,140,240,0.60);
-    box-shadow: 2px 2px 5px rgba(152,140,240,0.60);
-	padding: 3vw 5vw;
-	margin: 3vw 2vw 4vw 3vw;
+.main_content {
+  background-color: rgba(255, 255, 255, 0.60);
+  border: 3px solid rgba(255, 255, 255, 1.00);
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
+  box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
+  padding: 3vw 5vw;
+  margin: 4vw 2vw 10vw 3vw;
 }
 .btn_b_s {
   display: inline-block;
@@ -236,6 +236,8 @@ a {
   content: '';
   cursor: pointer;
   text-align: center;
+  margin-top: 5vw;
+	margin-bottom: 3vw;
 }
 .btn_b_s a {
   color: #FFFFFF;
@@ -302,6 +304,7 @@ a {
   .navbar-header {
     float: none;
     position: fixed;
+    z-index: 999;
   }
   .navbar-toggle {
     display: block;
@@ -429,7 +432,7 @@ a {
   .subtitle {
     font-size: 4vw;
   }
-	.main_content{
-		padding: 3vw 1vw;
-	}
+  .main_content {
+    padding: 3vw 1vw;
+  }
 }
