@@ -13,7 +13,7 @@ html, body {
   line-height: 1.6em;
   letter-spacing: 0.1em;
   color: #2a2a2a;
-	overflow-y: auto;
+  overflow-y: auto;
 }
 img {
   width: 100%;
@@ -117,8 +117,8 @@ a {
   content: '';
   cursor: pointer;
   text-align: center;
-  margin-top: -2%;
-	margin-bottom: 9%;
+  /*margin-top: -2%;*/
+  margin-bottom: 9%;
 }
 .btn_b a {
   color: #FFFFFF;
@@ -188,11 +188,9 @@ footer {
 .copyright {
   margin-top: 1rem;
 }
-main {
-  
-}
+main {}
 .main_01 {
-	max-width: 1366px;
+  max-width: 1366px;
   margin: 0px auto;
   max-height: 800px;
   background-repeat: no-repeat;
@@ -210,7 +208,7 @@ main {
   text-align: center;
   color: #FFFFFF;
   font-family: 'Noto Serif TC', serif;
-  font-size: 2.5rem;
+  font-size: 2vw;
   padding: 4.2vw 0px 5vw 0px;
 }
 .subtitle {
@@ -227,13 +225,25 @@ main {
   .header_content {
     margin-top: 5%;
   }
+  .m_title {
+    font-size: 1.3vw;
+  }
+  .subtitle {
+    font-size: 1.3vw;
+  }
 }
 @media (max-width: 1367px) {
   .header_content {
     margin-top: 0%;
   }
+  .m_title {
+    font-size: 1.8vw;
+  }
+  .subtitle {
+    font-size: 1.8vw;
+  }
 }
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .navbar-header {
     float: none;
     position: fixed;
@@ -316,6 +326,12 @@ main {
   footer {
     padding: 10px;
   }
+  .m_title {
+    font-size: 3vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+  }
 }
 @media (max-width: 767px) {
   .navbar-nav {
@@ -351,5 +367,11 @@ main {
   }
   .seal_12 {
     width: 30px;
+  }
+  .m_title {
+    font-size: 5vw;
+  }
+  .subtitle {
+    font-size: 4vw;
   }
 }
