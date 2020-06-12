@@ -81,5 +81,28 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap.min.js"></script>
+	<script>
+	function orient() {
+        //alert('gete');
+        if (window.orientation == 0 || window.orientation == 180) {
+            $("body").attr("class", "portrait");
+            orientation = 'portrait';
+            return false;
+        }
+        else if (window.orientation == 90 || window.orientation == -90) {
+            $("body").attr("class", "landscape");
+            orientation = 'landscape';
+            return false;
+        }
+    }
+   
+    $(function(){
+        orient();
+    });
+   
+    $(window).bind( 'orientationchange', function(e){
+        orient();
+    });
+	</script>
 </body>
 </html>
