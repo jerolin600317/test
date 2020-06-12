@@ -227,8 +227,8 @@ main {}
     border-radius: 10px;
     -webkit-box-shadow: 2px 2px 5px rgba(152,140,240,0.60);
     box-shadow: 2px 2px 5px rgba(152,140,240,0.60);
-	padding: 5vw;
-	margin: 3vw;
+	padding: 3vw 5vw;
+	margin: 3vw 2vw 4vw 2vw;
 }
 @media (min-width: 1365px) {
   .header_content {
@@ -383,4 +383,7 @@ main {}
   .subtitle {
     font-size: 4vw;
   }
+	.main_content{
+		padding: 3vw 2vw;
+	}
 }
