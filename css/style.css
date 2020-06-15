@@ -77,6 +77,7 @@ a {
 .top_menu li a:hover {
   color: #24a1ff;
   text-shadow: -1px 1px 0px #fff, 1px 1px 0px #fff, 1px -1px 0px #fff, -1px -1px 0px #fff;
+  filter: glow(color:#ffffff, strength=2);
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.00);
 }
@@ -183,7 +184,7 @@ a {
   /*width: 45px;*/
 }
 .seal_12 {
- /* width: 60px;*/
+  /* width: 60px;*/
 }
 .copyright {
   margin-top: 1rem;
@@ -336,17 +337,20 @@ a {
   background: linear-gradient(to bottom, rgba(255, 233, 127, 1) 10%, rgba(255, 206, 127, 1) 83%, rgba(255, 214, 127, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe97f', endColorstr='#ffd67f', GradientType=0); /* IE6-9 */
 }
-.login_txt{
-	color: #2a2a2a;
-	font-family: 'Noto Serif TC', serif;
-	font-size: 4.5rem;
-	text-align: center;
-	margin-bottom: -1vw;
+.login_txt {
+  color: #2a2a2a;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 4vw;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1.00);
+  filter: glow(color:#ffffff, strength=8);
 }
-.login_nb{
-    color: rgba(255,255,255,1.00);
-	font-size: 5rem;
-    text-shadow: 0px 0px 5px rgba(242, 42, 255, 1.00);
+.login_nb {
+  color: rgba(255, 255, 255, 1.00);
+  font-size: 5rem;
+  text-shadow: 0px 0px 8px rgba(242, 42, 255, 1.00);
+  filter: glow(color:#F22AFF, strength=8);
 }
 @media (min-width: 1365px) {
   .header_content {
@@ -449,7 +453,7 @@ a {
     background-size: auto 90%;
   }
   .btn_b {
-     margin-top: 0vh;
+    margin-top: 0vh;
   }
   footer {
     /*padding: 10px;*/
@@ -459,6 +463,12 @@ a {
   }
   .subtitle {
     font-size: 3vw;
+  }
+  .login_txt {
+    font-size: 3.5rem;
+  }
+  .login_nb {
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -505,9 +515,21 @@ a {
   .main_content {
     padding: 3vw 1vw;
   }
+  .login_txt {
+    font-size: 2.5rem;
+  }
+  .login_nb {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 361px) {
-	.main_01{
-		background-position: -15vw top;
-	}
+  .main_01 {
+    background-position: -15vw top;
+  }
+  .login_txt {
+    font-size: 2.5rem;
+  }
+  .login_nb {
+    font-size: 2.5rem;
+  }
 }
