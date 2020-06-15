@@ -169,7 +169,7 @@ a {
   background-image: url("../images/footer_bg.jpg");
   background-size: auto 100%;
   min-height: 160px;
-  padding: 20px;
+  padding: 2vw;
   color: #5d5d5d;
 }
 .footer_content {
@@ -180,10 +180,10 @@ a {
   padding: 3px;
 }
 .gameboss {
-  width: 45px;
+  /*width: 45px;*/
 }
 .seal_12 {
-  width: 60px;
+ /* width: 60px;*/
 }
 .copyright {
   margin-top: 1rem;
@@ -195,6 +195,15 @@ a {
   background-repeat: no-repeat;
   background-position: left top;
   background-image: url("../images/kv_p02.jpg");
+  background-size: auto 100%;
+}
+.main_02 {
+  max-width: 1366px;
+  margin: 0px auto;
+  max-height: 800px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-image: url("../images/kv_p03.jpg");
   background-size: auto 100%;
 }
 .m_title {
@@ -327,6 +336,18 @@ a {
   background: linear-gradient(to bottom, rgba(255, 233, 127, 1) 10%, rgba(255, 206, 127, 1) 83%, rgba(255, 214, 127, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe97f', endColorstr='#ffd67f', GradientType=0); /* IE6-9 */
 }
+.login_txt{
+	color: #2a2a2a;
+	font-family: 'Noto Serif TC', serif;
+	font-size: 4.5rem;
+	text-align: center;
+	margin-bottom: -1vw;
+}
+.login_nb{
+    color: rgba(255,255,255,1.00);
+	font-size: 5rem;
+    text-shadow: 0px 0px 5px rgba(242, 42, 255, 1.00);
+}
 @media (min-width: 1365px) {
   .header_content {
     margin-top: 5%;
@@ -431,7 +452,7 @@ a {
      margin-top: 0vh;
   }
   footer {
-    padding: 10px;
+    /*padding: 10px;*/
   }
   .m_title {
     font-size: 3vw;
@@ -462,7 +483,7 @@ a {
     margin-top: 0vh;
   }
   footer {
-    padding: 3px;
+    /*padding: 3px;*/
   }
   .footer_content div {
     padding: 3px;
@@ -470,10 +491,10 @@ a {
     line-height: 1.3em;
   }
   .gameboss {
-    width: 25px;
+    /*width: 25px;*/
   }
   .seal_12 {
-    width: 30px;
+    /*width: 30px;*/
   }
   .m_title {
     font-size: 5vw;
