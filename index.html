@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
 <title>"戀愛吧!偶像"預先登錄</title>
 <!-- Bootstrap -->
@@ -10,19 +9,19 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/ani.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 <!-- body code goes here -->
 <header class="header_style">
   <div class="container-fluid top_content">
     <div class="col-xs-10 col-md-4 logo"><img src="images/logo.png" alt=""><!--遊戲logo圖--></div>
     <div class="navbar-header col-xs-12 col-md-8">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <nav class="collapse navbar-collapse" id="myNavbar">
+      <nav class="collapse navbar-collapse test" id="myNavbar">
         <ul class="col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0 nav navbar-nav top_menu">
           <!--選單-->
-          <li class="col-md-3 col-sm-12"><a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;立即預約</a></li>
-          <li class="col-md-3 col-sm-12"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>&nbsp;達成獎勵</a></li>
-          <li class="col-md-3 col-sm-12"><a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>&nbsp;星&nbsp;資&nbsp;料</a></li>
+          <li class="col-md-3 col-sm-12"><a href="#p01"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;立即預約</a></li>
+          <li class="col-md-3 col-sm-12"><a href="#p02"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>&nbsp;達成獎勵</a></li>
+          <li class="col-md-3 col-sm-12"><a href="#p03"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>&nbsp;星&nbsp;資&nbsp;料</a></li>
           <li class="col-md-3 col-sm-12"><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;FB粉絲團</a></li>
         </ul>
       </nav>
@@ -36,7 +35,7 @@
   </div>
 </header>
 <main class="col-xs-12">
-  <div class="main_01">
+  <div class="main_01" id="p01">
     <div class="col-lg-4 col-sm-5 col-xs-10">
       <div class="m_title">預約登錄</div>
     </div>
@@ -90,7 +89,7 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <div class="main_02">
+  <div class="main_02" id="p02">
     <div class="col-lg-4 col-sm-5 col-xs-10">
       <div class="m_title">達成獎勵</div>
     </div>
@@ -101,9 +100,33 @@
       <div class="login_txt">目前已有&nbsp;<span class="login_nb">1234567</span>&nbsp;完成登錄</div>
       <div class="main_content">
         <h4>★事前預約人數達門檻，全服獎勵加碼大放送!</h4>
-		  <h1>操~這麼不想做就乾脆別做了~送啥鬼也決定不了~</h1>
+        <h1>操~這麼不想做就乾脆別做了~送啥鬼也決定不了~</h1>
       </div>
     </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="main_03" id="p03">
+    <div class="col-lg-4 col-sm-5 col-xs-10">
+      <div class="m_title">星&nbsp;資&nbsp;料</div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="main_04">
+    <div class="col-lg-4 col-sm-5 col-xs-10">
+      <div class="m_title">注意事項</div>
+    </div>
+	  <div class="precautions">
+      <h5><ol>
+        <li>事前登錄活動時間為，即日起至遊戲開放當天之23：59：59止</li>
+        <li>【人數達成加碼送】將於遊戲正式上市時統一全服發放，遊戲帳號首次登入時，即可於遊戲信箱領取。</li>
+        <li>若為遊戲相關之獎勵序號，將可於遊戲正式上市後於遊戲內兌換; 每個遊戲帳號及序號僅限兌換一次，序號兌換期限至2020/12/31 23:59。</li>
+        <li>活動獎勵不可兌換現金、轉售，若有不當操作將取消領獎資格。</li>
+        <li>完成所有活動步驟，才符合領獎資格。</li>
+        <li>請務必輸入正確的手機號碼，若因各人因素或因號碼無法辨識而無法領取序號，則自動喪失活動資格，恕不補發。</li>
+        <li>官方保留活動隨時修改條款的權利，如有科技股份有限公司之解釋及本活動的最終決策權為準。任何爭議，皆以黑馬數位</li>
+        <li>活動等相關問題請至客服中心進行回報,請點選右側連結前往： 前往客服中心</li>
+      </ol></h5>
+	  </div>
     <div class="clearfix"></div>
   </div>
 </main>
@@ -130,6 +153,18 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function(){
+    //滾動卷軸改變上方CSS
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 150) {
+         $('.test').addClass('navbar-fixed-top');//增加css樣式
+     } else {
+		 $('.test').removeClass('navbar-fixed-top');//刪除樣式
+    }
+    });
+});	
+</script>
 </body>
 </html>
