@@ -30,7 +30,7 @@
   <div class="header_content">
     <div class="kv_p01">
       <div class="light"></div>
-      <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 btn_b col-xs-8 col-xs-offset-2 btn_b"> <a href="#">立即登錄<span>▶</span></a> </div>
+      <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 btn_b col-xs-8 col-xs-offset-2 btn_b"> <a href="#p01">立即登錄<span>▶</span></a> </div>
     </div>
   </div>
 </header>
@@ -83,8 +83,35 @@
           </div>
         </div>
         <div class="col-xs-4 col-xs-offset-1 btn_y_s"><a href="#">確認送出</a></div>
-        <div class="col-xs-4 col-xs-offset-2 btn_b_s"><a href="#">獎勵查詢</a></div>
+        <div class="col-xs-4 col-xs-offset-2 btn_b_s" data-toggle="modal" data-target="#inquire"><a href="#">獎勵查詢</a></div>
         <div class="clearfix"></div>
+		  <!--獎勵查詢彈出視窗-->
+        <div class="modal fade" id="inquire" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">★&nbsp;獎勵序號查詢&nbsp;★</h4>
+              </div>
+              <div class="modal-body"><div class="input-group">
+            <div class="input-group-btn"> 
+              <!--下拉選單-->
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;&nbsp;地區&nbsp;&nbsp;<span class="caret"></span>&nbsp;</button>
+              <ul class="dropdown-menu">
+                <li><a href="#">台灣</a></li>
+                <li><a href="#">香港</a></li>
+              </ul>
+            </div>
+            <!--表單填寫欄位 -->
+            <input type="text" class="form-control" aria-label="..." placeholder="請輸入手機號碼查詢獎勵序號">
+          </div></div>
+              <div class="modal-footer">
+                <a href="#" type="button" class="btn btn-warning btn-lg" data-dismiss="modal">取&nbsp;消</a>
+                <a href="#" type="button" class="btn btn-info btn-lg">查&nbsp;詢</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="clearfix"></div>
@@ -115,18 +142,20 @@
     <div class="col-lg-4 col-sm-5 col-xs-10">
       <div class="m_title">注意事項</div>
     </div>
-	  <div class="precautions">
-      <h5><ol>
-        <li>事前登錄活動時間為，即日起至遊戲開放當天之23：59：59止</li>
-        <li>【人數達成加碼送】將於遊戲正式上市時統一全服發放，遊戲帳號首次登入時，即可於遊戲信箱領取。</li>
-        <li>若為遊戲相關之獎勵序號，將可於遊戲正式上市後於遊戲內兌換; 每個遊戲帳號及序號僅限兌換一次，序號兌換期限至2020/12/31 23:59。</li>
-        <li>活動獎勵不可兌換現金、轉售，若有不當操作將取消領獎資格。</li>
-        <li>完成所有活動步驟，才符合領獎資格。</li>
-        <li>請務必輸入正確的手機號碼，若因各人因素或因號碼無法辨識而無法領取序號，則自動喪失活動資格，恕不補發。</li>
-        <li>官方保留活動隨時修改條款的權利，如有科技股份有限公司之解釋及本活動的最終決策權為準。任何爭議，皆以黑馬數位</li>
-        <li>活動等相關問題請至客服中心進行回報,請點選右側連結前往： 前往客服中心</li>
-      </ol></h5>
-	  </div>
+    <div class="precautions">
+      <h5>
+        <ol>
+          <li>事前登錄活動時間為，即日起至遊戲開放當天之23：59：59止</li>
+          <li>【人數達成加碼送】將於遊戲正式上市時統一全服發放，遊戲帳號首次登入時，即可於遊戲信箱領取。</li>
+          <li>若為遊戲相關之獎勵序號，將可於遊戲正式上市後於遊戲內兌換; 每個遊戲帳號及序號僅限兌換一次，序號兌換期限至2020/12/31 23:59。</li>
+          <li>活動獎勵不可兌換現金、轉售，若有不當操作將取消領獎資格。</li>
+          <li>完成所有活動步驟，才符合領獎資格。</li>
+          <li>請務必輸入正確的手機號碼，若因各人因素或因號碼無法辨識而無法領取序號，則自動喪失活動資格，恕不補發。</li>
+          <li>官方保留活動隨時修改條款的權利，如有科技股份有限公司之解釋及本活動的最終決策權為準。任何爭議，皆以黑馬數位</li>
+          <li>活動等相關問題請至客服中心進行回報,請點選右側連結前往： 前往客服中心</li>
+        </ol>
+      </h5>
+    </div>
     <div class="clearfix"></div>
   </div>
 </main>
