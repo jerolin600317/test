@@ -589,9 +589,9 @@ a {
   .login_nb {
     font-size: 2.5rem;
   }
-	.kv_date{
-		padding: 5vh 5vw 3vw 5vw;
-	}
+  .kv_date {
+    padding: 5vh 5vw 3vw 5vw;
+  }
   .kv_content {
     height: 60vw;
   }
@@ -607,3 +607,11 @@ a {
     font-size: 2.5rem;
   }
 }
+/*@media (max-width:1367)end(max-height: 769px) {
+  .kv_title {
+    height: 24vh;
+  }
+  .kv_content {
+    height: 66vh;
+  }
+}*/
