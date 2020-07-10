@@ -55,10 +55,12 @@ a {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-image: url("../images/bg-1.jpg");
-    background-size: auto 78%;
+    background-size: auto 79%;
+	/*display: flex;
+	flex-direction: column;*/
 }
 .p_mm{
-	height:inherit;
+	/*height:inherit;*/
 	background: url("../images/girl.gif") no-repeat 10vh 10vh;
 	background-size: 56vh auto;
 }
