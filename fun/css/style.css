@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
+/* CSS Document */
+html, body {
+  -webkit-overflow-scrolling: touch; /*解決該死的哀鳳300毫秒延遲*/
+  -ms-touch-action: none; /*IE10 解決該死的哀鳳300毫秒延遲*/
+  /*touch-action: none; IE11 解決該死的哀鳳300毫秒延遲*/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "微软雅黑";
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  color: #2a2a2a;
+  overflow-y: auto;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding: 0px;
+}
+.content {
+	max-width: 720px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	max-width: 700px;
+	text-align: center;
+	z-index: 99;
+}
+
+.btn {
+	max-width: 374px;
+}
+
+
+.text {
+	background-color: rgba(255,255,255,0.45);
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 8vh;
+	margin-top: 8vh;
+}
+.bg {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url("../images/bg-1.jpg");
+    background-size: auto 78%;
+}
+.p_mm{
+	height:inherit;
+	background: url("../images/girl.gif") no-repeat 10vh 10vh;
+	background-size: 56vh auto;
+}
