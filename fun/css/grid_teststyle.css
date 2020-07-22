@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+  -webkit-overflow-scrolling: touch; /*解決該死的哀鳳300毫秒延遲*/
+  -ms-touch-action: none; /*IE10 解決該死的哀鳳300毫秒延遲*/
+  /*touch-action: none; IE11 解決該死的哀鳳300毫秒延遲*/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "微软雅黑";
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  color: #2a2a2a;
+  overflow-y: auto;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 'header''main''footer';
+  grid-template-rows: 1fr 8fr 1fr;/*縱向區塊比例*/
+  background: url("../images/index_bg.jpg") no-repeat center top;
+  background-size: cover;
+}
+.header {
+  grid-area: header;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.logo img{
+	max-width: 406px;
+}
+.main {
+  grid-area: main;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.footer {
+  grid-area: footer;
+  max-width: 1366px;
+  margin: 0 auto;
+}
