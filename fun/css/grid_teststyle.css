@@ -37,7 +37,7 @@ a {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto -50% auto;
-	z-index: 99;
+  z-index: 99;
 }
 .logo img {
   max-width: 406px;
@@ -100,7 +100,7 @@ a {
   width: 100%;
   margin: 0 auto;
   background: url("../images/kv_p01.png") no-repeat center center;
-  background-size: auto 100%;
+  background-size: revert;
   display: grid;
   grid-template-rows: 12fr 1fr;
 }
@@ -116,7 +116,7 @@ a {
   z-index: 99;
   cursor: pointer;
   text-align: center;
-  top: -100%;
+  top: -9vw;
 }
 .btn_b a {
   color: #FFFFFF;
@@ -160,12 +160,12 @@ a {
   background: linear-gradient(to bottom, rgba(76, 240, 255, 1) 10%, rgba(58, 196, 255, 1) 83%, rgba(63, 210, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cf0ff', endColorstr='#3fd2ff', GradientType=0); /* IE6-9 */
 }
-.main_01{
-	max-width: 1366px;
-	background: url("../images/kv_p02.jpg") no-repeat center left;
-	background-size: 100% auto;
-	margin: 0 auto;
-	height: 100%;
+.main_01 {
+  max-width: 1366px;
+  background: url("../images/kv_p02.jpg") no-repeat center left;
+  background-size: 100% auto;
+  margin: 0 auto;
+  height: 100%;
 }
 .m_title {
   background-repeat: no-repeat;
@@ -191,13 +191,13 @@ a {
   width: 90%
 }
 .main_content {
-    background-color: rgba(255, 255, 255, 0.60);
-    border: 3px solid rgba(255, 255, 255, 1.00);
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
-    box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
-    padding: 2vw 3vw;
-    margin: 4vh 2vw 10vh 2vw;
+  background-color: rgba(255, 255, 255, 0.60);
+  border: 3px solid rgba(255, 255, 255, 1.00);
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
+  box-shadow: 2px 2px 5px rgba(152, 140, 240, 0.60);
+  padding: 2vw 3vw;
+  margin: 4vh 2vw 10vh 2vw;
 }
 .btn_b_s {
   display: inline-block;
@@ -391,11 +391,15 @@ a {
     padding: 15px;
   }
   .main {
-    grid-template-rows: 9fr 1fr;
-    background-size: auto 64%;
+    grid-template-rows: 7fr 1fr;
+    background-size: auto 100vw;
   }
-	.main_01{
-		background-size: auto 90%;
-		background-position-x: 13%;
+  .main_01 {
+    background-size: auto 90%;
+    background-position-x: 13%;
+  }
+	.btn_b{
+		top: -20vh;
+		max-height: 20vw;
 	}
 }
