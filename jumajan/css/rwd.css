@@ -1,18 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 @media (max-width: 767px) {
-	.top_menu {
+  .top_menu {
     grid-template-columns: 1fr;
-    
-	justify-items:center;
+    justify-items: center;
   }
   .menu_list ul li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
-	.logo{
-		text-align: center;
-	}
-  .logo img{
-	width:50%;
-}
+  .logo {
+    text-align: center;
+    padding: 1vw;
+  }
+  .logo img {
+    width: 50%;
+  }
 }

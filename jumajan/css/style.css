@@ -45,8 +45,8 @@ body{
 	max-width:301px;
 }
 .menu_list ul{
-	padding-left: 0px;
-	margin:0.5rem 0px;
+	padding: 0px;
+	margin:0px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	align-content: center;
