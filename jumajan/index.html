@@ -13,7 +13,7 @@
 
 <body>
 <div class="content">
-	<div id="nav"> </div>
+  <div id="nav"><!--呼叫外部top_menu--></div>
   <!--<nav class="top_menu"><div class="logo"><img src="images/logo.png" alt=""/></div>
     <div class="menu_list">
       <ul>
@@ -34,7 +34,7 @@
 <script>
 	$(function(){
 $.get("nav.html",function(data){
-$("#nav").html(data);//初始化載入介面
+$("#nav").html(data);//初始化載入top_menu
 });
 });
 	</script>
