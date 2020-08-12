@@ -13,8 +13,8 @@
 
 <body>
 <div class="content">
-  <nav class="top_menu">
-    <div class="logo"><img src="images/logo.png" alt=""/></div>
+	<div id="nav"> </div>
+  <!--<nav class="top_menu"><div class="logo"><img src="images/logo.png" alt=""/></div>
     <div class="menu_list">
       <ul>
         <li>遊戲介紹</li>
@@ -22,14 +22,20 @@
         <li>常見問題</li>
         <li>聯繫客服</li>
       </ul>
-    </div>
-  </nav>
+    </div></nav>-->
   <main>
-	<div></div>
-	</main>
+    <div></div>
+  </main>
   <footer>新增 footer 標籤的內容位於此處</footer>
 </div>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+$.get("nav.html",function(data){
+$("#nav").html(data);//初始化載入介面
+});
+});
+	</script>
 </html>
