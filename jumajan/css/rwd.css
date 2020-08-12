@@ -5,7 +5,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .menu_list ul li {
+  .menu_list ul li a{
     font-size: 1.6rem;
   }
   .logo {
