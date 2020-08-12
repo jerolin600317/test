@@ -12,7 +12,7 @@ html, body {
   font-family: 'Noto Sans TC', Helvetica, Arial, sans-serif, 'Microsoft JhengHei';
   line-height: 1.6em;
   letter-spacing: 0.1em;
-  color: #2a2a2a;
+  color: #fff;
   overflow-y: auto;
 }
 img {
@@ -31,22 +31,24 @@ body{
 	background: url("../images/top_bg.jpg") no-repeat center top;
 	height: 100%;
 }
-.top_menu,main,footer{
+#nav,main,footer{
 	max-width: 1366px;
 	margin: 0 auto;
 }
 .top_menu{
 	background-color: rgba(0,0,0,0.50);
 	display: grid;
-	grid-template-columns: 3fr 2fr;
+	grid-template-columns: 6fr 2fr;
 	grid-auto-rows: auto;
+	position: absolute;
+	max-width: 1366px;
+	width: -webkit-fill-available;
 }
 .logo img{
 	max-width:301px;
 }
 .menu_list ul{
 	padding: 0px;
-	margin:0px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	align-content: center;
@@ -54,11 +56,24 @@ body{
 	list-style: none;
 }
 .menu_list ul li a{
-    
     color: rgba(255,255,255,1.00);
     font-size: 2rem;
     text-align: center;
     white-space: nowrap;
-	padding: 0.5rem;
+	padding: 1rem 2vw;
 	display: block;
+	border: 1px solid rgba(255,255,255,1.00);
+	margin:0px 0.5vw;
+	border-radius: 6px;
+}
+.menu_list ul li a:hover{
+	color: rgba(255,226,105,1.00)
+}
+main{
+	height: 100%;
+}
+.key_vision{
+	height: 100%;
+	background: url("../images/header_bg.jpg") no-repeat center top;
+	background-size: 100% auto;
 }
