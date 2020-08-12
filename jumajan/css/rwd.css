@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width: 767px) {
+	.top_menu {
+    grid-template-columns: 1fr;
+    
+	justify-items:center;
+  }
+  .menu_list ul li {
+    font-size: 1.8rem;
+  }
+	.logo{
+		text-align: center;
+	}
+  .logo img{
+	width:50%;
+}
+}
