@@ -5,17 +5,28 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .menu_list ul li a{
+  .menu_list ul li a {
     font-size: 1.6rem;
   }
   .logo {
     text-align: center;
-    padding: 1vw;
+    width: 100%
+  }
+  .logo_m {
+    display: none;
   }
   .logo img {
     width: 50%;
   }
-	.key_vision{
-	background-size: auto 100%;
-}
+  #nav {
+    margin: 0px;
+  }
+  main {
+    margin-top: 11rem;
+    grid-template-rows: 0.5fr auto 0.5fr 0.5fr;
+  }
+  .key_vision {
+    background-size: auto 100%;
+	  height: 60vw;
+  }
 }
