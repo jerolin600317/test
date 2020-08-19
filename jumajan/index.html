@@ -38,7 +38,8 @@
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.mousewheel.min.js"></script>
+	
+<!--<script src="js/jquery.mousewheel.min.js"></script>-->
 <script>
 	$(function(){
 $.get("nav.html",function(data){
@@ -46,14 +47,24 @@ $("#nav").html(data);//初始化載入top_menu
 });
 });
 </script>
-<script>
-$(window).mousewheel(function(event) {
-    console.log(event.deltaX, event.deltaY, event.deltaFactor);
-	if(event.deltaY < 0){
-		$(".logo").addClass("logo_m");//增加css樣式
-	}else{
-		$(".logo").removeClass("logo_m");//刪除樣式
-	}
-});
+	<script src="https://www.w3school.com.cn/jquery/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("body").scroll(function () {
+        if ($("body").scrollTop() > 100) {
+         $(".logo").addClass("logo_m");//增加css樣式
+     } else {
+		 $(".logo").removeClass("logo_m");//刪除樣式
+    }
+    });
+		});
+//$(window).mousewheel(function(event) {
+//    console.log(event.deltaX, event.deltaY, event.deltaFactor);
+//	if(event.deltaY < 0){
+//		$(".logo").addClass("logo_m");//增加css樣式
+//	}else{
+//		$(".logo").removeClass("logo_m");//刪除樣式
+//	}
+//});
 </script>
 </html>
