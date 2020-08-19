@@ -14,57 +14,69 @@
 <body>
 <div class="content">
   <div id="nav"><!--呼叫外部top_menu--></div>
-  <!--<nav class="top_menu"><div class="logo"><img src="images/logo.png" alt=""/></div>
-    <div class="menu_list">
-      <ul>
-        <li>遊戲介紹</li>
-      >成為館主</li<a   <lihref="#">#</a>>
-        <li>常見問題</li>
-        <li>聯繫客服</li>
-      </ul>
-    </div></nav>-->
-  
   <main>
     <div class="key_vision">
       <div class="event_text"><img src="images/even_text.png" alt=""/></div>
       <div class="event_text01"><a class="play_game_bn" href="https://jpk.173yy.tw/twmj/share/v20/download.html?inviteCode=191451&gameId=taiwanmj&appFlag=taiwan&channel=100&t=1595829894551%EF%BD%9D" target="_blank"> </a></div>
-	  </div>
-    <div><a href="#"><img src="images/install_login_bn.png"></a></div>
-    <div></div>
-    <div></div>
+    </div>
+    <div><a class="install_login_bn" href="#"><img src="images/install_login_bn.png"></a></div>
+    <div class="game_list">
+      <div><img src="images/sn_mj_bn.png" alt=""/>
+        <div class="game_ui">
+          <ul>
+            <li><a href="#">遊戲介紹</a></li>
+            <li><a href="https://jpk.173yy.tw/twmj/share/v20/download.html?inviteCode=191451&gameId=taiwanmj&appFlag=taiwan&channel=100&t=1595829894551%EF%BD%9D" target="_blank">免費試玩</a></li>
+          </ul>
+        </div>
+      </div>
+      <div><img src="images/6p13p_bn.png" alt=""/>
+        <div class="game_ui">
+          <ul>
+            <li><a href="#">遊戲介紹</a></li>
+            <li><a href="https://jpk.173yy.tw/twmj/share/v20/download.html?inviteCode=191451&gameId=taiwanmj&appFlag=taiwan&channel=100&t=1595829894551%EF%BD%9D" target="_blank">免費試玩</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>新增 footer 標籤的內容位於此處</footer>
+  <footer>
+    <div class="footer_conter">
+      <div>
+        <h5><a href="index.html">首頁</a>│<a href="#">成為代理</a>│<a href="#">常見問題</a>│<a href="#">聯繫客服</a></h5>
+        <h6>@2020 All Rights Reserved. 鬥陣創意股份有限公司</h6>
+      </div>
+      <div>
+        <div class="col-xs-1 seal_15">
+          <h6><img src="images/seal_15.jpg" alt=""/></h6>
+        </div>
+        <div class="col-xs-11">
+          <h6>※本遊戲僅提供娛樂，以成年人為訴求對象。<br>
+            ※本遊戲不提供「現金交易賭博」，也沒有機會贏得現金或實體獎品。<br>
+            ※在社交類遊戲中的練習狀況或成就，不代表日後在「現金交易賭博」中會獲得成功。<br>
+            ※遊戲幣一經購入後無法以任何理由退換現金。 </h6>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
-	
-<!--<script src="js/jquery.mousewheel.min.js"></script>-->
-<script>
+<script type="text/javascript">
 	$(function(){
 $.get("nav.html",function(data){
 $("#nav").html(data);//初始化載入top_menu
 });
 });
-</script>
-	
-<script type="text/javascript">
+
 	$(document).ready(function(){
 	$("body").scroll(function () {
-        if ($("body").scrollTop() > 50) {
+        if ($("body").scrollTop() > 52) {
          $(".logo").addClass("logo_m");//增加css樣式
      } else {
 		 $(".logo").removeClass("logo_m");//刪除樣式
     }
     });
 		});
-//$(window).mousewheel(function(event) {
-//    console.log(event.deltaX, event.deltaY, event.deltaFactor);
-//	if(event.deltaY < 0){
-//		$(".logo").addClass("logo_m");//增加css樣式
-//	}else{
-//		$(".logo").removeClass("logo_m");//刪除樣式
-//	}
-//});
 </script>
 </html>

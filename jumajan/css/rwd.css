@@ -23,10 +23,20 @@
   }
   main {
     margin-top: 11rem;
-    grid-template-rows: 0.5fr auto 0.5fr 0.5fr;
   }
   .key_vision {
     background-size: auto 100%;
-	  height: 60vw;
+    height: 60vw;
   }
+  .game_ui ul {
+    margin-top: -25%;
+  }
+  .game_ui ul li a {
+    font-size: 1.5rem;
+    padding: 1vw;
+  }
+	.footer_conter{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr;
+	}
 }
