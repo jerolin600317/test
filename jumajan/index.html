@@ -39,8 +39,8 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div class="footer_conter">
+  <footer id="footer">
+    <!--<div class="footer_conter">
       <div>
         <h5><a href="index.html">首頁</a>│<a href="#">成為代理</a>│<a href="#">常見問題</a>│<a href="#">聯繫客服</a></h5>
         <h6>@2020 All Rights Reserved. 鬥陣創意股份有限公司</h6>
@@ -56,7 +56,7 @@
             ※遊戲幣一經購入後無法以任何理由退換現金。 </h6>
         </div>
       </div>
-    </div>
+    </div>-->
   </footer>
 </div>
 </body>
@@ -66,6 +66,9 @@
 	$(function(){
 $.get("nav.html",function(data){
 $("#nav").html(data);//初始化載入top_menu
+});
+		$.get("footer.html",function(data){
+$("#footer").html(data);//初始化載入copyright
 });
 });
 
