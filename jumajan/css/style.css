@@ -111,7 +111,7 @@ a.play_game_bn {
   max-width: 390px;
   max-height: 160px;
   height: 100%;
-	display: block;
+  display: block;
   text-align: -webkit-center;
   animation: pg_bn linear 0.5s;
   animation-iteration-count: infinite;
@@ -176,8 +176,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2vw;
-	min-height: 179px;
+  min-height: 179px;
+  background-color: rgba(0, 0, 0, 0.60);
 }
 .seal_15 {
   max-width: 50px;
+  padding-right: 0.8vw;
 }
