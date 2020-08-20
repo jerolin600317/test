@@ -84,7 +84,7 @@ body {
 }
 main {
   display: grid;
-  grid-template-rows: 1fr auto 0.5fr 1fr;
+  grid-template-rows: 1fr auto 0.5fr 0.5fr 0.5fr;
   grid-row-gap: 2.4vh;
   margin-top: 10rem;
 }
@@ -155,7 +155,7 @@ a:hover.install_login_bn {
   grid-column-gap: 2.4vh;
 }
 .game_ui ul {
-  padding: 1vw 2vw;
+  padding: 1vw 2vw 5% 2vw;
   display: grid;
   grid-template-columns: auto auto;
   align-content: center;
