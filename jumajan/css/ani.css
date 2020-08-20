@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+.play_game_bn {
+  animation: pg_bn linear 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: pg_bn linear 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: pg_bn linear 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: pg_bn linear 0.5s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: pg_bn linear 0.5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+@keyframes pg_bn{
+  0% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-moz-keyframes pg_bn{
+  0% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-webkit-keyframes pg_bn {
+  0% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-o-keyframes pg_bn {
+  0% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-ms-keyframes pg_bn {
+  0% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_game_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
