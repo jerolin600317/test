@@ -40,7 +40,7 @@ body {
   width: -webkit-fill-available;
   margin: 0 16px 0 0;
 }
-.top_menu, main, .footer_conter {
+.top_menu, main, .footer_conter, .content_main {
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -154,4 +154,38 @@ footer {
 .seal_15 {
   max-width: 50px;
   padding-right: 0.8vw;
+}
+/*南北麻將*/
+.majan_title_text {
+  max_width: 915px;
+}
+.majan_title {
+  height: 75vh;
+  max-height: 546px;
+  background: url("../images/majan_title_bg.jpg") no-repeat center top;
+  background-size: auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+a.play_majan_bn {
+  background: url("../images/play_majan_bn.png") no-repeat center top;
+  background-size: auto 100%;
+  max-width: 390px;
+  max-height: 160px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+a:hover.play_majan_bn, a:visited.play_majan_bn {
+  animation: pg_bn linear 0s;
+  -webkit-filter: brightness(120%);
+}
+.content_main {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-row-gap: 2.4vh;
+  margin-top: 10rem;
+	width: 100%;
 }

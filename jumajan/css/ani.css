@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* 首頁玩遊戲按鈕 */
 .play_game_bn {
   animation: pg_bn linear 0.5s;
   animation-iteration-count: infinite;
@@ -73,41 +73,115 @@
     background-size: auto 100%;
   }
 }
-
-@-o-keyframes pg_bn {
+/* 麻將玩遊戲按鈕 */
+.play_majan_bn {
+  animation: pm_bn linear 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: pm_bn linear 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: pm_bn linear 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: pm_bn linear 0.5s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: pm_bn linear 0.5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+@keyframes pm_bn{
   0% {
-    background: url("../images/play_game_bn.png") no-repeat center top;
+    background: url("../images/play_majan_bn.png") no-repeat center top;
     background-size: auto 100%;
   }
   50.99% {
-    background: url("../images/play_game_bn.png") no-repeat center top;
+    background: url("../images/play_majan_bn.png") no-repeat center top;
     background-size: auto 100%;
   }
   51% {
-    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
     background-size: auto 100%;
   }
   100% {
-    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
     background-size: auto 100%;
   }
 }
 
-@-ms-keyframes pg_bn {
+@-moz-keyframes pm_bn{
   0% {
-    background: url("../images/play_game_bn.png") no-repeat center top;
+    background: url("../images/play_majan_bn.png") no-repeat center top;
     background-size: auto 100%;
   }
   50.99% {
-    background: url("../images/play_game_bn.png") no-repeat center top;
+    background: url("../images/play_majan_bn.png") no-repeat center top;
     background-size: auto 100%;
   }
   51% {
-    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
     background-size: auto 100%;
   }
   100% {
-    background: url("../images/play_game_bn_over.png") no-repeat center top;
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-webkit-keyframes pm_bn {
+  0% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-o-keyframes pm_bn {
+  0% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+}
+
+@-ms-keyframes pm_bn {
+  0% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  50.99% {
+    background: url("../images/play_majan_bn.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  51% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
+    background-size: auto 100%;
+  }
+  100% {
+    background: url("../images/play_majan_bn_over.png") no-repeat center top;
     background-size: auto 100%;
   }
 }

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="images/jupk.ico" />
+<link rel="icon" href="images/icon_64X64.png" type="image/ico" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/ani.css" rel="stylesheet" type="text/css">
+<link href="css/rwd.css" rel="stylesheet" type="text/css">
+<title>揪牌咖不卡卡 陪你天天摸一把！</title>
+</head>
+
+<body>
+<div class="content">
+  <div id="nav"><!--呼叫外部top_menu--></div>
+  <div class="content_main">
+    <div class="majan_title">
+      <div class="majan_title_text"><img src="images/majan_title_text.png" alt=""/></div>
+      <div class="event_text01"><a class="play_majan_bn" href="https://jpk.173yy.tw/twmj/share/v20/download.html?inviteCode=191451&gameId=taiwanmj&appFlag=taiwan&channel=100&t=1595829894551%EF%BD%9D" target="_blank"> </a></div>
+    </div>
+    <div><!--遊戲特色輪播-->
+      <div id="game_features" class="carousel slide"> 
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#game_features" data-slide-to="0" class="active"></li>
+          <li data-target="#game_features" data-slide-to="1"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active"> <img src="images/download_now.jpg" alt="First slide"> </div>
+          <div class="item"> <img src="images/waiting_for_you.jpg" alt="Second slide"> </div>
+        </div>
+        <!-- 轮播（Carousel）导航 --> 
+        <a class="left carousel-control" href="#game_features" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#game_features" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a></div>
+    </div>
+  </div>
+  <footer id="footer"><!--呼叫外部footer--></footer>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/hammer.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+$.get("nav.html",function(data){
+$("#nav").html(data);//初始化載入top_menu
+});
+		$.get("footer.html",function(data){
+$("#footer").html(data);//初始化載入copyright
+});
+});
+
+	$(document).ready(function(){
+	$("body").scroll(function () {
+        if ($("body").scrollTop() > 52) {
+         $(".logo").addClass("logo_m");//增加css樣式
+     } else {
+		 $(".logo").removeClass("logo_m");//刪除樣式
+    }
+    });
+		});
+	$(document).ready(function(){//控制輪播時間10秒及滑鼠移上停止
+		$("#game_features").carousel({interval: 10000, pause: "hover"});
+	});
+	
+$(function(){//外掛hammer.min.js讓輪播支援觸控
+var myElement= document.getElementById('game_features')
+var hm=new Hammer(myElement);
+hm.on("swipeleft",function(){
+$('#game_features').carousel('next')
+})
+hm.on("swiperight",function(){
+$('#game_features').carousel('prev')
+})
+})
+</script>
+</html>
