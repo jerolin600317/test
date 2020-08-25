@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 /* CSS Document */
 html, body {
   -webkit-overflow-scrolling: touch; /*解決該死的哀鳳300毫秒延遲*/
@@ -39,6 +39,7 @@ body {
   position: fixed;
   width: -webkit-fill-available;
   margin: 0 16px 0 0;
+  z-index: 99;
 }
 .top_menu, main, .footer_conter, .content_main {
   max-width: 1366px;
@@ -156,7 +157,7 @@ footer {
   padding-right: 0.8vw;
 }
 /*南北麻將*/
-.majan_title_text {
+.majan_title_text, .sixp_title_text {
   max_width: 915px;
 }
 .majan_title {
@@ -184,8 +185,69 @@ a:hover.play_majan_bn, a:visited.play_majan_bn {
 }
 .content_main {
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 0.3fr 0.5fr;
   grid-row-gap: 2.4vh;
   margin-top: 10rem;
-	width: 100%;
+  width: 100%;
+}
+.game_features {
+  background: url("../images/game_features_bg.jpg") no-repeat center top;
+}
+.game_features_title {
+  max-width: 363px;
+  width: 50vh;
+  margin: 0 auto;
+}
+.carousel-inner {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ffe48b;
+  border-radius: 2rem;
+  margin: 0 auto 1% auto;
+  background: -moz-linear-gradient(left, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000d0912', endColorstr='#cc0d0912', GradientType=1); /* IE6-9 */
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+}
+.carousel-control {
+  width: 5%;
+}
+.features_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2%;
+}
+.features_content h1{
+    color: #FFE64D;
+	font-weight: bold;
+}
+/*六人十三張*/
+.sixp_title {
+  height: 75vh;
+  max-height: 546px;
+  background: url("../images/6p13p_title_bg.jpg") no-repeat center top;
+  background-size: auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+a.play_sixp_bn {
+  background: url("../images/play_6p13p_bn.png") no-repeat center top;
+  background-size: auto 100%;
+  max-width: 390px;
+  max-height: 160px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+a:hover.play_sixp_bn, a:visited.play_sixp_bn {
+  animation: p6_bn linear 0s;
+  -webkit-filter: brightness(120%);
 }

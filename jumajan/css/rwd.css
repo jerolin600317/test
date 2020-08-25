@@ -46,12 +46,30 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
   }
-	/*麻將*/
-	.majan_title {
+  /*麻將*/
+  .majan_title {
     background-size: auto 100%;
     height: 60vw;
   }
-	.content_main {
+  .content_main {
     margin-top: 31vw;
+  }
+  .game_features_title {
+    width: 50vw;
+  }
+  .features_content {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 0.6fr;
+  }
+  .features_content h1 {
+    font-size: 2rem;
+  }
+  .features_content h4 {
+    font-size: 1rem;
+  }
+  /*六人十三張*/
+  .sixp_title {
+    background-size: auto 100%;
+    height: 60vw;
   }
 }
