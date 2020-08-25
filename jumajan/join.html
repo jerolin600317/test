@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="images/jupk.ico" />
+<link rel="icon" href="images/icon_64X64.png" type="image/ico" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/ani.css" rel="stylesheet" type="text/css">
+<link href="css/rwd.css" rel="stylesheet" type="text/css">
+<title>剛好缺一咖 快上揪牌咖！</title>
+</head>
+
+<body>
+<div class="content">
+  <div id="nav"><!--呼叫外部top_menu--></div>
+  <div class="content_main">
+    <div class="join_title">
+      <div class="join_title_text"><img src="images/join_title_text.png" alt=""/></div>
+    </div>
+    <div class="game_features"><!--成為館主-->
+      <div class="game_features_title"><img src="images/join_title01.png" alt=""/></div>
+      <div class="join_kun">
+        <h2>★&nbsp;成為館主您將擁有專屬自己的麻將俱樂部，透過販售房卡賺取價差收入。</h2>
+        <h2>★&nbsp;可自行舉辦麻將積分比賽,您的麻將俱樂部一切由您來決定。</h2>
+        <h2>★&nbsp;高度自由性，隨時隨地輕鬆開局，親朋好友一起揪牌咖。</h2>
+      </div>
+    </div>
+  </div>
+  <footer id="footer"><!--呼叫外部footer--></footer>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/hammer.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+$.get("nav.html",function(data){
+$("#nav").html(data);//初始化載入top_menu
+});
+		$.get("footer.html",function(data){
+$("#footer").html(data);//初始化載入copyright
+});
+});
+
+	$(document).ready(function(){
+	$("body").scroll(function () {
+        if ($("body").scrollTop() > 52) {
+         $(".logo").addClass("logo_m");//增加css樣式
+     } else {
+		 $(".logo").removeClass("logo_m");//刪除樣式
+    }
+    });
+		});
+</script>
+</html>

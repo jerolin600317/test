@@ -223,9 +223,9 @@ a:hover.play_majan_bn, a:visited.play_majan_bn {
   align-items: center;
   padding: 2%;
 }
-.features_content h1{
-    color: #FFE64D;
-	font-weight: bold;
+.features_content h1 {
+  color: #FFE64D;
+  font-weight: bold;
 }
 /*六人十三張*/
 .sixp_title {
@@ -250,4 +250,30 @@ a.play_sixp_bn {
 a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   animation: p6_bn linear 0s;
   -webkit-filter: brightness(120%);
+}
+/*成為館主*/
+.join_title {
+  height: 75vh;
+  max-height: 546px;
+  background: url("../images/join_title_bg.jpg") no-repeat center top;
+  background-size: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.join_title_text {
+  max-width: 855px;
+}
+.join_kun {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ffe48b;
+  border-radius: 2rem;
+  margin: 0 auto 1% auto;
+  padding: 1% 2% 2% 2%;
+  background: -moz-linear-gradient(left, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000d0912', endColorstr='#cc0d0912', GradientType=1); /* IE6-9 */
 }
