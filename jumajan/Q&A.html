@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="images/jupk.ico" />
+<link rel="icon" href="images/icon_64X64.png" type="image/ico" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/ani.css" rel="stylesheet" type="text/css">
+<link href="css/rwd.css" rel="stylesheet" type="text/css">
+<title>剛好缺一咖 快上揪牌咖！</title>
+</head>
+
+<body>
+<div class="content">
+  <div id="nav"><!--呼叫外部top_menu--></div>
+  <div class="content_main01">
+    <div class="game_features"><!--常見問題-->
+      <div class="game_features_title"><img src="images/Q&A_title.png" alt=""/></div>
+      <div class="join_kun">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading01"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+              <h2 class="panel-title">Q1：揪牌咖怎麼玩?</h2>
+              </a> </div>
+            <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+              <div class="panel-body">A1：玩家可直接創建房間選擇北部麻將或南部麻將，將房號提供給好友，即可一起進行遊玩。</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading02"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
+              <h2 class="panel-title">Q2：什麼是俱樂部?</h2>
+              </a> </div>
+            <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+              <div class="panel-body">A2：俱樂部分為練習場與積分場排名，由俱樂部各館主自行訂製開桌規則。</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading03"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
+              <h2 class="panel-title">Q3：什麼是房卡?</h2>
+              </a> </div>
+            <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+              <div class="panel-body">A3：打牌通行證，每次開局打一圈需消耗四張房卡，房卡可由房主付或AA均分付。</div>
+            </div>
+          </div>
+			<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading04"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
+              <h2 class="panel-title">Q4：如何購買房卡?</h2>
+              </a> </div>
+            <div id="collapse04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading04">
+              <div class="panel-body">A4：可透過線上儲值購買金幣，再至商店中兌換。</div>
+            </div>
+          </div>
+			<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading05"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
+              <h2 class="panel-title">Q5：需要遊戲幣才能玩嗎?</h2>
+              </a> </div>
+            <div id="collapse05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05">
+              <div class="panel-body">A5：開局只需要消耗房卡，不需消耗任何遊戲幣。</div>
+            </div>
+          </div>
+			<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading06"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse06" aria-expanded="false" aria-controls="collapse06">
+              <h2 class="panel-title">Q6：其他福利?</h2>
+              </a> </div>
+            <div id="collapse06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading06">
+              <div class="panel-body">A6：只要申請代理俱樂部，即可用代理優惠價購買房卡。</div>
+            </div>
+          </div>
+			<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading07"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse07" aria-expanded="false" aria-controls="collapse07">
+              <h2 class="panel-title">Q7：怎麼查戰績?</h2>
+              </a> </div>
+            <div id="collapse07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading07">
+              <div class="panel-body">A7：點選主介面戰績，即可查看過去歷史戰績。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer"><!--呼叫外部footer--></footer>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/hammer.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+$.get("nav.html",function(data){
+$("#nav").html(data);//初始化載入top_menu
+});
+		$.get("footer.html",function(data){
+$("#footer").html(data);//初始化載入copyright
+});
+});
+
+	$(document).ready(function(){
+	$("body").scroll(function () {
+        if ($("body").scrollTop() > 52) {
+         $(".logo").addClass("logo_m");//增加css樣式
+     } else {
+		 $(".logo").removeClass("logo_m");//刪除樣式
+    }
+    });
+		});
+</script>
+</html>

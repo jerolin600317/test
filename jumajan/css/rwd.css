@@ -77,7 +77,29 @@
     background-size: auto 100%;
     height: 60vw;
   }
-	.join_kun h2{
-		font-size: 2rem;
+  .join_kun h2 {
+    font-size: 1.8rem;
+  }
+  .join_content02 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1vh;
+  }
+  .join_content02 h4 {
+    font-size: 1.4rem;
+  }
+  .discount_event {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1vw;
+  }
+  .join_now {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1vh;
+  }
+	.join_now h4{
+		font-size: 1.4rem;
 	}
 }

@@ -10,8 +10,8 @@ html, body {
   margin: 0px;
   height: 100%;
   font-family: 'Noto Sans TC', Helvetica, Arial, sans-serif, 'Microsoft JhengHei';
-  line-height: 1.6em;
-  letter-spacing: 0.1em;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
   color: #fff;
   overflow-y: auto;
 }
@@ -41,7 +41,7 @@ body {
   margin: 0 16px 0 0;
   z-index: 99;
 }
-.top_menu, main, .footer_conter, .content_main {
+.top_menu, main, .footer_conter, .content_main,.content_main01 {
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -192,6 +192,7 @@ a:hover.play_majan_bn, a:visited.play_majan_bn {
 }
 .game_features {
   background: url("../images/game_features_bg.jpg") no-repeat center top;
+  background-size: 100% auto;
 }
 .game_features_title {
   max-width: 363px;
@@ -276,4 +277,93 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   background: -webkit-linear-gradient(left, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(13, 9, 18, 0) 0%, rgba(13, 9, 18, 0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000d0912', endColorstr='#cc0d0912', GradientType=1); /* IE6-9 */
+}
+.join_kun h2 {
+  font-weight: bold;
+}
+.join_content02 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1vh;
+  justify-items: center;
+}
+.join_content02 h2 {
+  text-align: center;
+  color: #FFE64D;
+}
+.join_img {
+  margin: 10%;
+  border-radius: 50%;
+  border: 0.3vw solid #ff69c1;
+  background: rgb(68, 40, 210); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(68, 40, 210, 1) 0%, rgba(200, 48, 122, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(68, 40, 210, 1) 0%, rgba(200, 48, 122, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(68, 40, 210, 1) 0%, rgba(200, 48, 122, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4428d2', endColorstr='#c8307a', GradientType=0); /* IE6-9 */
+}
+.join_img img {
+  max-width: 310px;
+  padding: 10%;
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
+}
+.discount_event {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1vw;
+}
+.table-responsive {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  color: #323232;
+}
+.table-responsive h3 {
+  font-weight: bold;
+  color: #FF6E00;
+  margin-top: 0.8rem;
+}
+.table-responsive h4 span {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #FF0004;
+}
+.game_features_title04 {
+  max-width: 916px;
+  width: 98vw;
+  margin: 0 auto;
+}
+.join_now{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap:1vw;
+	/*justify-items: center;*/
+}
+.join_now h4{
+	font-weight: bold;
+}
+.join_now div{
+	color: #323232;
+	background: #FFFFFF;
+	width: 100%;
+	border-radius: 1rem;
+	padding: 5%;
+	/*text-align: center;*/
+}
+/*常見問題*/
+.content_main01 {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 10rem;
+  width: 100%;
+}
+.panel-title{
+	color: #323232;
+font-size: 2rem;	
+}
+.panel-body{
+	color: #323232;
+	font-size: 1.5rem;
+}
+.panel-group{
+	margin: 2rem;
 }
