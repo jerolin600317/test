@@ -41,7 +41,7 @@ body {
   margin: 0 0px 0 0;
   z-index: 99;
 }
-.top_menu, main, .footer_conter, .content_main,.content_main01 {
+.top_menu, main, .footer_conter, .content_main, .content_main01 {
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -144,6 +144,7 @@ a:hover.install_login_bn {
 }
 footer {
   background: url("../images/footer_bg.jpg") no-repeat center bottom;
+  grid-row-end: none;
 }
 .footer_conter {
   display: grid;
@@ -332,22 +333,22 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   width: 98vw;
   margin: 0 auto;
 }
-.join_now{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap:1vw;
-	/*justify-items: center;*/
+.join_now {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1vw;
+  /*justify-items: center;*/
 }
-.join_now h4{
-	font-weight: bold;
+.join_now h4 {
+  font-weight: bold;
 }
-.join_now div{
-	color: #323232;
-	background: #FFFFFF;
-	width: 100%;
-	border-radius: 1rem;
-	padding: 5%;
-	/*text-align: center;*/
+.join_now div {
+  color: #323232;
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 5%;
+  /*text-align: center;*/
 }
 /*常見問題*/
 .content_main01 {
@@ -356,32 +357,32 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   margin-top: 10rem;
   width: 100%;
 }
-.panel-title{
-	color: #323232;
-font-size: 2rem;	
+.panel-title {
+  color: #323232;
+  font-size: 2rem;
 }
-.panel-body{
-    color: #070707;
-    font-size: 1.5rem;
+.panel-body {
+  color: #070707;
+  font-size: 1.5rem;
 }
-.panel-group{
-	margin: 2rem;
+.panel-group {
+  margin: 2rem;
 }
 /*聯繫客服*/
-.line_csr{
-	background: #FFFFFF;
-	border-radius: 1rem;
-	padding: 3%;
-	text-align: center;
-	margin-top: 1%;
+.line_csr {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  padding: 3%;
+  text-align: center;
+  margin-top: 1%;
 }
-.line_csr img{
-	max-width: 422px;
+.line_csr img {
+  max-width: 422px;
 }
-.line_csr_text{
-	background: #3ace01;
-	padding: 2%;
-	max-width: 422px;
-	border-radius: 1rem;
-	margin: 1% auto;
+.line_csr_text {
+  background: #3ace01;
+  padding: 2%;
+  max-width: 422px;
+  border-radius: 1rem;
+  margin: 1% auto;
 }
