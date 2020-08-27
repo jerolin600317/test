@@ -66,5 +66,15 @@ $("#footer").html(data);//初始化載入copyright
     }
     });
 		});
+	$(document).ready(function(){
+        var window_x=$(window).width();
+		var body_x=$(".content").width();
+        if ((window_x-body_x) > 15) {
+		$("#nav").css("margin-right","16px");//增加css樣式	
+     } else {
+		 $("#nav").css("margin-right","0px");//增加css樣式
+    }
+    
+		});
 </script>
 </html>

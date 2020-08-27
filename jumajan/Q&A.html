@@ -44,7 +44,7 @@
               <div class="panel-body">A3：打牌通行證，每次開局打一圈需消耗四張房卡，房卡可由房主付或AA均分付。</div>
             </div>
           </div>
-			<div class="panel panel-default">
+          <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading04"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
               <h2 class="panel-title">Q4：如何購買房卡?</h2>
               </a> </div>
@@ -52,7 +52,7 @@
               <div class="panel-body">A4：可透過線上儲值購買金幣，再至商店中兌換。</div>
             </div>
           </div>
-			<div class="panel panel-default">
+          <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading05"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
               <h2 class="panel-title">Q5：需要遊戲幣才能玩嗎?</h2>
               </a> </div>
@@ -60,7 +60,7 @@
               <div class="panel-body">A5：開局只需要消耗房卡，不需消耗任何遊戲幣。</div>
             </div>
           </div>
-			<div class="panel panel-default">
+          <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading06"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse06" aria-expanded="false" aria-controls="collapse06">
               <h2 class="panel-title">Q6：其他福利?</h2>
               </a> </div>
@@ -68,7 +68,7 @@
               <div class="panel-body">A6：只要申請代理俱樂部，即可用代理優惠價購買房卡。</div>
             </div>
           </div>
-			<div class="panel panel-default">
+          <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading07"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse07" aria-expanded="false" aria-controls="collapse07">
               <h2 class="panel-title">Q7：怎麼查戰績?</h2>
               </a> </div>
@@ -104,6 +104,16 @@ $("#footer").html(data);//初始化載入copyright
 		 $(".logo").removeClass("logo_m");//刪除樣式
     }
     });
+		
+		});
+	$(document).ready(function(){//偵測有無卷軸
+        var window_x=$(window).width();
+		var body_x=$(".content").width();
+        if ((window_x-body_x) > 15) {
+		$("#nav").css("margin-right","16px");//增加css樣式	
+     } else {
+		 $("#nav").css("margin-right","0px");//增加css樣式
+    }
 		});
 </script>
 </html>

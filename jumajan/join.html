@@ -175,7 +175,7 @@
           </div>
           <div>
             <h4>★&nbsp;第二步：加入LINE@官方</h4>
-            <p><img src="images/line_qr.png" alt=""/></p>
+            <p><img src="images/line_csr_qr.png" alt=""/></p>
           </div>
           <div>
             <h4>★&nbsp;第三步：於LINE官方中提交資料</h4>
@@ -213,6 +213,16 @@ $("#footer").html(data);//初始化載入copyright
 		 $(".logo").removeClass("logo_m");//刪除樣式
     }
     });
+		});
+	$(document).ready(function(){//偵測有無卷軸
+        var window_x=$(window).width();
+		var body_x=$(".content").width();
+        if ((window_x-body_x) > 15) {
+		$("#nav").css("margin-right","16px");//增加css樣式	
+     } else {
+		 $("#nav").css("margin-right","0px");//增加css樣式
+    }
+    
 		});
 </script>
 </html>

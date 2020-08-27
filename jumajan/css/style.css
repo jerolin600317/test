@@ -38,7 +38,7 @@ body {
 #nav {
   position: fixed;
   width: -webkit-fill-available;
-  margin: 0 16px 0 0;
+  margin: 0 0px 0 0;
   z-index: 99;
 }
 .top_menu, main, .footer_conter, .content_main,.content_main01 {
@@ -361,9 +361,27 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
 font-size: 2rem;	
 }
 .panel-body{
-	color: #323232;
-	font-size: 1.5rem;
+    color: #070707;
+    font-size: 1.5rem;
 }
 .panel-group{
 	margin: 2rem;
+}
+/*聯繫客服*/
+.line_csr{
+	background: #FFFFFF;
+	border-radius: 1rem;
+	padding: 3%;
+	text-align: center;
+	margin-top: 1%;
+}
+.line_csr img{
+	max-width: 422px;
+}
+.line_csr_text{
+	background: #3ace01;
+	padding: 2%;
+	max-width: 422px;
+	border-radius: 1rem;
+	margin: 1% auto;
 }
