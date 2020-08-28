@@ -81,7 +81,7 @@ body {
   border-radius: 0.8rem;
 }
 .menu_list ul li a:hover, .menu_list ul li a:visited, .game_ui ul li a:hover, .game_ui ul li a:visited {
-  background-color: rgba(255, 225, 104, 0.30)
+  background-color: rgba(255, 225, 104, 0.30);
 }
 main {
   display: grid;
@@ -385,4 +385,46 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   max-width: 422px;
   border-radius: 1rem;
   margin: 1% auto;
+}
+/*安裝與登入*/
+.process {
+  /*background: #FFFFFF;*/
+  border-radius: 1rem;
+  color: #323232;
+  margin-top: 1%;
+}
+.nav-tabs li a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  padding: 10px 5rem;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background: rgb(255, 250, 158); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255, 250, 158, 1) 0%, rgba(255, 255, 255, 1) 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 250, 158, 1) 0%, rgba(255, 255, 255, 1) 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 250, 158, 1) 0%, rgba(255, 255, 255, 1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa9e', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+  border-bottom-color: #ffffff;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: rgba(255, 225, 104, 0.30);
+}
+.tab-content {
+  background: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  padding: 3%;
+  border-top: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.process_img {
+  margin: 1% auto 2%;
+  text-align: center;
+}
+.process_img img {
+  max-width: 800px;
+  border: 5px solid #DDDDDD;
+  border-radius: 5rem;
 }
