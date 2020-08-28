@@ -34,13 +34,14 @@
 <script src="js/hammer.min.js"></script> 
 <script src="js/style.js"></script> 
 <script type="text/javascript">
-//	$(document).ready(function () { //偵測有無卷軸		
-//  if ($("body").height() > 500) {
-//    $("#nav").css("margin-right", "16px"); //增加css樣式	
-//  } else {
-//    $("#nav").css("margin-right", "0px"); //增加css樣式
-//  }
-//		});
+	$(document).ready(function () { //偵測卷軸		
+  if ($(".content").height() > 923) {
+    $("#nav").css("margin-right", "16px"); //增加css樣式	
+  } 
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			$("#nav").css("margin-right", "0px");
+		}
+		});
 	</script>
 </body>
 </html>
