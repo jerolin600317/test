@@ -42,6 +42,11 @@
     font-size: 1.5rem;
     padding: 1vw;
   }
+  .download_now {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr 0.5fr;
+  }
   .footer_conter {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
@@ -60,7 +65,7 @@
   .features_content {
     grid-template-columns: auto;
     grid-template-rows: 1fr 0.7fr;
-	  align-items: start;
+    align-items: start;
   }
   .features_content h1 {
     font-size: 2rem;

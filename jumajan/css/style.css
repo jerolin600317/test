@@ -140,12 +140,22 @@ a:hover.install_login_bn {
   grid-column-gap: 1vw;
   height: 100%;
   list-style: none;
-  margin: 0px;
   position: relative;
   margin-top: -20%;
 }
 .game_ui ul li a {
   padding: 3vh;
+}
+.download_now {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1vw;
+  margin-top: -12%;
+}
+.download_now a:hover, .download_now a:visited {
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
 }
 footer {
   background: url("../images/footer_bg.jpg") no-repeat center bottom;
@@ -344,7 +354,6 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 1vw;
-  /*justify-items: center;*/
 }
 .join_now h4 {
   font-weight: bold;
@@ -355,7 +364,10 @@ a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   width: 100%;
   border-radius: 1rem;
   padding: 5%;
-  /*text-align: center;*/
+}
+.join_now a:hover, .join_now a:visited {
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
 }
 /*常見問題*/
 .content_main01 {
