@@ -60,6 +60,7 @@
   .features_content {
     grid-template-columns: auto;
     grid-template-rows: 1fr 0.7fr;
+	  align-items: start;
   }
   .features_content h1 {
     font-size: 2rem;
