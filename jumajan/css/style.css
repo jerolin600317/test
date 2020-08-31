@@ -120,9 +120,11 @@ a.play_game_bn {
 }
 a:hover.play_game_bn, a:visited.play_game_bn {
   animation: pg_bn linear 0s;
+  filter: brightness(120%);
   -webkit-filter: brightness(120%);
 }
 a:hover.install_login_bn {
+  filter: brightness(120%);
   -webkit-filter: brightness(120%);
 }
 .game_list {
@@ -185,6 +187,7 @@ a.play_majan_bn {
 }
 a:hover.play_majan_bn, a:visited.play_majan_bn {
   animation: pg_bn linear 0s;
+  filter: brightness(120%);
   -webkit-filter: brightness(120%);
 }
 .content_main {
@@ -254,6 +257,7 @@ a.play_sixp_bn {
 }
 a:hover.play_sixp_bn, a:visited.play_sixp_bn {
   animation: p6_bn linear 0s;
+  filter: brightness(120%);
   -webkit-filter: brightness(120%);
 }
 /*成為館主*/
