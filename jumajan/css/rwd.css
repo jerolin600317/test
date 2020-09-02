@@ -51,6 +51,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
   }
+  .btn_top {
+    right: 0.5%;
+    bottom: 0.5%;
+  }
+  .btn_top a {
+    padding: 1vw 1vw 1.3vw 1.2vw;
+    font-size: 6vw;
+  }
   /*麻將*/
   .majan_title {
     background-size: auto 100%;

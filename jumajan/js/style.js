@@ -44,3 +44,15 @@ $(function () { //外掛hammer.min.js讓輪播支援觸控
     $('#game_features').carousel('prev')
   })
 });
+//往上的按鈕
+$(function(){
+			var btn_top = $('.btn_top');
+            btn_top.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+
+	
+});

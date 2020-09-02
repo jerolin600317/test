@@ -172,6 +172,20 @@ footer {
   max-width: 50px;
   padding-right: 0.8vw;
 }
+.btn_top {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  z-index: 999999;
+}
+.btn_top a {
+  display: block;
+  border-radius: 50%;
+  padding: 0.6vw 0.55vw 0.7vw 0.75vw;
+  background-color: rgba(255, 221, 0, 0.50);
+  font-size: 2vw;
+  text-align: center;
+}
 /*南北麻將*/
 .majan_title_text, .sixp_title_text {
   max_width: 915px;
