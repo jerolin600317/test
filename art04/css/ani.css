@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+.love_heart {
+	animation: love_heart_ani linear 2s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 90%;
+	-webkit-animation: love_heart_ani linear 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: 50% 90%;
+	-moz-animation: love_heart_ani linear 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transform-origin: 50% 90%;
+	-o-animation: love_heart_ani linear 2s;
+	-o-animation-iteration-count: infinite;
+	-o-transform-origin: 50% 90%;
+	-ms-animation: love_heart_ani linear 2s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transform-origin: 50% 90%;
+}
+ @keyframes love_heart_ani {
+ 0% {
+ opacity:0;
+ transform:  scaleX(0.80) scaleY(0.80);
+}
+ 50% {
+ opacity:1;
+ transform:  scaleX(0.95) scaleY(0.95);
+}
+ 80% {
+ opacity:1;
+ transform:  scaleX(1.10) scaleY(1.10);
+}
+ 100% {
+ opacity:0;
+ transform:  scaleX(1.20) scaleY(1.20);
+}
+}
+ @-moz-keyframes love_heart_ani {
+ 0% {
+ opacity:0;
+ -moz-transform:  scaleX(0.80) scaleY(0.80);
+}
+ 50% {
+ opacity:1;
+ -moz-transform:  scaleX(0.95) scaleY(0.95);
+}
+ 80% {
+ opacity:1;
+ -moz-transform:  scaleX(1.10) scaleY(1.10);
+}
+ 100% {
+ opacity:0;
+ -moz-transform:  scaleX(1.20) scaleY(1.20);
+}
+}
+ @-webkit-keyframes love_heart_ani {
+ 0% {
+ opacity:0;
+ -webkit-transform:  scaleX(0.80) scaleY(0.80);
+}
+ 50% {
+ opacity:1;
+ -webkit-transform:  scaleX(0.95) scaleY(0.95);
+}
+ 80% {
+ opacity:1;
+ -webkit-transform:  scaleX(1.10) scaleY(1.10);
+}
+ 100% {
+ opacity:0;
+ -webkit-transform:  scaleX(1.20) scaleY(1.20);
+}
+}
+ @-o-keyframes love_heart_ani {
+ 0% {
+ opacity:0;
+ -o-transform:  scaleX(0.80) scaleY(0.80);
+}
+ 50% {
+ opacity:1;
+ -o-transform:  scaleX(0.95) scaleY(0.95);
+}
+ 80% {
+ opacity:1;
+ -o-transform:  scaleX(1.10) scaleY(1.10);
+}
+ 100% {
+ opacity:0;
+ -o-transform:  scaleX(1.20) scaleY(1.20);
+}
+}
+ @-ms-keyframes love_heart_ani {
+ 0% {
+ opacity:0;
+ -ms-transform:  scaleX(0.80) scaleY(0.80);
+}
+ 50% {
+ opacity:1;
+ -ms-transform:  scaleX(0.95) scaleY(0.95);
+}
+ 80% {
+ opacity:1;
+ -ms-transform:  scaleX(1.10) scaleY(1.10);
+}
+ 100% {
+ opacity:0;
+ -ms-transform:  scaleX(1.20) scaleY(1.20);
+}
+}
+

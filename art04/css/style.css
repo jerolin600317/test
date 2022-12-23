@@ -1,0 +1,452 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
+/* CSS Document */
+html, body {
+	-webkit-overflow-scrolling: touch; /*解決該死的哀鳳300毫秒延遲*/
+	-ms-touch-action: none; /*IE10 解決該死的哀鳳300毫秒延遲*/
+	/*touch-action: none; IE11 解決該死的哀鳳300毫秒延遲*/
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "微软雅黑";
+	letter-spacing: 0.2rem;
+	color: #2a2a2a;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #280d28;
+}
+img {
+	width: 100%;
+	image-rendering: -moz-crisp-edges;          /* Firefox        */
+	image-rendering: -o-crisp-edges;            /* Opera          */
+	image-rendering: -webkit-optimize-contrast; /* Safari         */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+a:hover {
+	-webkit-filter: brightness(200%); /* Safari */
+	filter: brightness(200%);
+}
+.container-fluid {
+	padding: 0px;
+}
+a.logo {
+	max-width: 120px;
+	line-height: 60px;
+}
+.top_menu {
+	background-image: url(../images/menu_bg.jpg);
+	background: -moz-linear-gradient(top, #fdeeab 1%, #ee9f52 15%, #eec56d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fdeeab 1%, #ee9f52 15%, #eec56d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fdeeab 1%, #ee9f52 15%, #eec56d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeeab', endColorstr='#eec56d', GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat-x;
+	padding: 0 0.8em;
+}
+.top_bn {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	line-height: 2em;
+	background-color: rgba(41,1,1,1);
+	background-image: -webkit-linear-gradient(top, #783232 1%, #c38a8a 3%, #7a4242 10%, #290101 70%, #290101 90%, #974d4d 100%);
+	background-image: -moz-linear-gradient(top, #783232 1%, #c38a8a 3%, #7a4242 10%, #290101 70%, #290101 90%, #974d4d 100%);
+	background-image: -o-linear-gradient(top, #783232 1%, #c38a8a 3%, #7a4242 10%, #290101 70%, #290101 90%, #974d4d 100%);
+	background-image: linear-gradient(top, #783232 1%, #c38a8a 3%, #7a4242 10%, #290101 70%, #290101 90%, #974d4d 100%);
+	border: ridge #00adff 3px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 0.6em 0.8em;
+	margin: 6px 0px;
+	-webkit-box-shadow: 0 0 10px 2px rgba(255,255,255,1);
+	-moz-box-shadow: 0 0 10px 2px rgba(255,255,255,1);
+	box-shadow: 0 0 10px 2px rgba(255,255,255,1);
+}
+.main {
+	max-width: 1920px;
+	/*max-height: 960px;*/
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background: no-repeat center center;
+	image-rendering: -moz-crisp-edges;          /* Firefox        */
+	image-rendering: -o-crisp-edges;            /* Opera          */
+	image-rendering: -webkit-optimize-contrast; /* Safari         */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
+}
+@media screen and (orientation: portrait) {
+/*針對縱向 css去撰寫*/
+.main {
+	background-size: auto 100vh;
+}
+}
+@media screen and (orientation: landscape) {
+/*針對橫向 css*去撰寫*/
+.main {
+	background-size: 100vw auto;
+}
+}
+.main01 {
+	background-image: url(../images/bg01.jpg);
+}
+.main02 {
+	background-image: url(../images/bg02.jpg);
+}
+.main04 {
+	background-image: url(../images/bg03.jpg);
+}
+.main05 {
+	background-image: url(../images/bg04.jpg);
+}
+.game_logo {
+	z-index: 999;
+	text-align: center;
+}
+.game_logo img {
+	max-width: 532px;
+}
+.p_img {
+	height: 100vh;
+	/*	width: 100%;*/
+	image-rendering: -moz-crisp-edges;          /* Firefox        */
+	image-rendering: -o-crisp-edges;            /* Opera          */
+	image-rendering: -webkit-optimize-contrast; /* Safari         */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
+}
+.p01 {
+	background: url(../images/p01.png) no-repeat 41vw 25vh;
+	background-size: 57vh auto;
+}
+.p02 {
+	background: url(../images/p02.png) no-repeat 8vw top;
+	background-size: 47vw auto;
+}
+.p03 {
+	background: url(../images/p03.png) no-repeat right 10vw top 10vh;
+	background-size: 33vw auto;
+}
+.nox {
+	max-width: 154px;
+	max-height: 544px;
+}
+.nox_h {
+	margin-top: -25vh;/*margin-bottom:15vh;*/
+}
+.download_bn {
+	max-width: 451px;
+	max-height: 189px;
+	z-index: 999;/*margin-top:108%;*/
+}
+.love_heart {
+	max-width: 1834px;
+	max-height: 776px;
+	background: url(../images/love_heart.png) no-repeat center center;
+	background-size: 100%;
+	image-rendering: -moz-crisp-edges;          /* Firefox        */
+	image-rendering: -o-crisp-edges;            /* Opera          */
+	image-rendering: -webkit-optimize-contrast; /* Safari         */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
+	margin-bottom: -100vh;
+}
+.title {
+	max-width: 598px;
+	max-height: 559px;
+	text-align: center;
+}
+.p04 {
+	background: url(../images/p04.png) no-repeat 8vw 2vh;
+	background-size: 90vh;
+}
+.p045 {
+	background: url(../images/p045.png) no-repeat right 6vw top 2vh;
+	background-size: 76vh;
+}
+.text_bg {
+	background-color: rgba(41,1,1,0.75);
+	clip-path: inset(6px round 10px);
+	color: #FFF;
+}
+.text_bg_k {
+	/*	margin-top:15vh;
+*/	height: min-content;
+	background: -moz-linear-gradient(top bottom, rgb(0 255 252 / 50%) 0%, rgb(252 0 255 / 50%) 100%);
+	background: -webkit-linear-gradient(top bottom, rgb(0 255 252 / 50%) 0%, rgb(252 0 255 / 50%) 100%);
+	background: linear-gradient(to bottom, rgb(0 255 252 / 50%) 0%, rgb(252 0 255 / 50%) 100%);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border: 4px solid #FFF;
+	-webkit-box-shadow: 0 0 20px 2px rgba(255,255,255,1);
+	-moz-box-shadow: 0 0 20px 2px rgba(255,255,255,1);
+	box-shadow: 0 0 20px 2px rgba(255,255,255,1);
+}
+.text_bg01 {
+	margin-top: 5vh;
+}
+/*.text_bg{
+	margin-top: 15%;
+  position: relative;
+    border: 8px solid transparent;
+    border-radius: 20px;
+    background-color: rgba(41,1,1,0.7);
+    background-clip: padding-box;
+    padding: 3% 8%;
+    -webkit-box-shadow: 0 0 20px 10px rgba(255,255,255,1);
+   -moz-box-shadow: 0 0 20px 10px rgba(255,255,255,1);
+   box-shadow: 0 0 20px 10px rgba(255,255,255,1);
+   color: #FFF;
+}
+.text_bg::after{
+    position: absolute;
+    top: -10px; bottom: -10px;
+    left: -10px; right: -10px;
+    background: -moz-linear-gradient(top,#00fffc 1%, #fc00ff 100%);
+	background: -webkit-linear-gradient(top,#00fffc 1%, #fc00ff 100%);
+	background: linear-gradient(to bottom,#00fffc 1%, #fc00ff 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}*/
+.game_img {
+	max-width: 968px;
+	max-height: 548px;
+	border: 8px ridge #0bf3fc;
+	box-shadow: 0px 0px 8px 6px rgba(255 94 250);
+	border-radius: 12px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 3em;
+	height: 3em;
+	background-color: #290101;
+	border: 0.3em solid #fff;
+	-webkit-box-shadow: 5px 5px 0px rgb(255 94 250);
+	-moz-box-shadow: 5px 5px 0px rgb(255 94 250);
+	box-shadow: 5px 5px 0px rgb(255 94 250);
+}
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1;
+}
+.p05 {
+	background: url(../images/p05.png) no-repeat -7vw 5vh;
+	background-size: 100vh;
+}
+.p056 {
+	background: url(../images/p056.png) no-repeat right -5vw top;
+	background-size: 96vh;
+}
+.footer {
+	bottom: 0px;
+	color: #000000;
+	background: #fdeeab; /* Old browsers */
+	background: -moz-linear-gradient(top, #eec56d 1%, #ee9f52 85%, #fdeeab 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eec56d 1%, #ee9f52 85%, #fdeeab 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eec56d 1%, #ee9f52 85%, #fdeeab 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eec56d', endColorstr='#fdeeab', GradientType=0 ); /* IE6-9 */
+	text-align: center;
+}
+.footer_bg {
+	background: url(../images/footer_bg_01.jpg) no-repeat center center;
+	background-size: auto 100%;
+	height: 100%;
+	max-width: 1920px;
+	min-height: 280px;
+	margin: 0 auto;
+	padding: 2vw;
+}
+@media (min-width: 1365px) {
+.p04 {
+}
+.text_bg01 {
+/*padding: 2% 3%;*/
+}
+}
+@media (max-width: 1281px) {
+.p01 {
+}
+.nox {
+}
+.p04 {
+}
+.p05 {
+}
+.text_bg {
+}
+.text_bg01 {
+}
+}
+@media (max-width: 1025px) {
+.p01 {
+}
+.nox {
+}
+.download_bn {
+}
+.text_bg {
+}
+.text_bg01 {
+}
+}
+@media (max-width: 993px) {
+.p01 {
+	background-size: 45vh auto;
+	background-position: 35vw 37vh;
+}
+.p02 {
+	background-size: 74vh auto;
+	background-position: -20vw 13vh;
+}
+.p03 {
+	background-size: 54vh auto;
+	background-position: right -10vw top 7vh;
+}
+.p04 {
+	background-size: 80vh auto;
+	background-position: -32vw 13vh;
+}
+.p045 {
+	background-size: 60vh auto;
+	background-position: right -29vw top 9vh;
+}
+.p05 {
+	background-size: 80vh auto;
+	background-position: -33vw 20vh;
+}
+.p056 {
+	background-size: 70vh auto;
+	background-position: right -34vw top 3vh;
+}
+.nox {
+}
+.main02 {
+}
+.main03 {
+}
+.main04 {
+	height: 60vh;
+}
+.main05 {
+}
+.nox {
+	/*display: none;*/
+	visibility: hidden;
+}
+.p04 {
+}
+.p05 {
+}
+.text_bg {
+}
+}
+@media (max-width: 769px) {
+.game_logo {
+/*		margin-top: -20vh;
+*/}
+.main01 {
+}
+.p01 {
+	background-size: 45vh auto;
+	background-position: 35vw 37vh;
+}
+.p02 {
+	background-size: 74vh auto;
+	background-position: -20vw 13vh;
+}
+.p03 {
+	background-size: 54vh auto;
+	background-position: right -10vw top 7vh;
+}
+.p04 {
+	background-size: 80vh auto;
+	background-position: -28vw 13vh;
+}
+.p045 {
+	background-size: 60vh auto;
+	background-position: right -29vw top 12vh;
+}
+.p05 {
+	background-size: 80vh auto;
+	background-position: -33vw 20vh;
+}
+.p056 {
+	background-size: 70vh auto;
+	background-position: right -34vw top 3vh;
+}
+.nox {
+	/*display: none;*/
+	visibility: hidden;
+}
+.download_bn {
+}
+.main02 {
+}
+.main04 {
+	height: 60vh;
+}
+.main03, .main05 {
+}
+.p04 {
+}
+.text_bg {
+}
+}
+@media (max-width: 577px) {
+.game_logo {
+/*margin-top: -7vh;*/
+}
+.p01 {
+	background-size: 32vh auto;
+	background-position: 44vw 54vh;
+}
+.p02 {
+	background-size: 62vh auto;
+	background-position: -28vw 22vh;
+}
+.p03 {
+	background-size: 40vh auto;
+	background-position: right -11vw top 19vh;
+}
+.p04 {
+	background-size: 56vh auto;
+	background-position: -37vw 4vh;
+}
+.p045 {
+	background-size: 48vh auto;
+	background-position: right -40vw top 5vh;
+}
+.p05 {
+	background-size: 80vh auto;
+	background-position: -54vw 20vh;
+}
+.p056 {
+	background-size: 70vh auto;
+	background-position: right -65vw top 3vh;
+}
+.download_bn {
+}
+.nox {
+	/*display: none;*/
+	visibility: hidden;
+}
+.text_bg {
+}
+.main04 {
+	height: 60vh;
+}
+.text_bg01 {
+}
+.main05 {
+	height: 125vh;
+	background-size: auto 125vh;
+}
+}
