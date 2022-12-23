@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+.ani_p01 {
+	animation: ani_p01_ani linear 0.6s;
+	animation-iteration-count: infinite;
+	-webkit-animation: ani_p01_ani linear 0.6s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: ani_p01_ani linear 0.6s;
+	-moz-animation-iteration-count: infinite;
+	-o-animation: ani_p01_ani linear 0.6s;
+	-o-animation-iteration-count: infinite;
+	-ms-animation: ani_p01_ani linear 0.6s;
+	-ms-animation-iteration-count: infinite;
+}
+ @keyframes ani_p01_ani {
+ 0% {
+ background-image:url(../images/p01_1.png);
+}
+ 20% {
+ background-image:url(../images/p01_2.png);
+}
+ 40% {
+ background-image:url(../images/p01_3.png);
+}
+ 60% {
+background-image:url(../images/p01_4.png);
+}
+80% {
+background-image:url(../images/p01_5.png);
+}
+100% {
+background-image:url(../images/p01_6.png);
+}
+}
+ @-moz-keyframes love_heart_ani {
+  0% {
+ background-image:url(../images/p01_1.png);
+}
+ 20% {
+ background-image:url(../images/p01_2.png);
+}
+ 40% {
+ background-image:url(../images/p01_3.png);
+}
+ 60% {
+background-image:url(../images/p01_4.png);
+}
+80% {
+background-image:url(../images/p01_5.png);
+}
+100% {
+background-image:url(../images/p01_6.png);
+}
+}
+ @-webkit-keyframes love_heart_ani {
+ 0% {
+ background-image:url(../images/p01_1.png);
+}
+ 20% {
+ background-image:url(../images/p01_2.png);
+}
+ 40% {
+ background-image:url(../images/p01_3.png);
+}
+ 60% {
+background-image:url(../images/p01_4.png);
+}
+80% {
+background-image:url(../images/p01_5.png);
+}
+100% {
+background-image:url(../images/p01_6.png);
+}
+}
+ @-o-keyframes love_heart_ani {
+ 0% {
+ background-image:url(../images/p01_1.png);
+}
+ 20% {
+ background-image:url(../images/p01_2.png);
+}
+ 40% {
+ background-image:url(../images/p01_3.png);
+}
+ 60% {
+background-image:url(../images/p01_4.png);
+}
+80% {
+background-image:url(../images/p01_5.png);
+}
+100% {
+background-image:url(../images/p01_6.png);
+}
+}
+ @-ms-keyframes love_heart_ani {
+ 0% {
+ background-image:url(../images/p01_1.png);
+}
+ 20% {
+ background-image:url(../images/p01_2.png);
+}
+ 40% {
+ background-image:url(../images/p01_3.png);
+}
+ 60% {
+background-image:url(../images/p01_4.png);
+}
+80% {
+background-image:url(../images/p01_5.png);
+}
+100% {
+background-image:url(../images/p01_6.png);
+}
+}
